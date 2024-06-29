@@ -9,7 +9,7 @@ services:
   # docker run -d --name mongodb --network=roboshop mongodb:1
 
   backend:
-    image: rajesh028/backend:v1
+    image: rajesh028/backend:v1.0
     container_name: backend
     depends_on:
       - mysql
@@ -18,7 +18,7 @@ services:
     
 
   frontend:
-    image: rajesh028/frontend:v1
+    image: rajesh028/frontend:v1.0
     container_name: frontend
     depends_on:
       - backend
@@ -27,7 +27,7 @@ services:
     
 
   mysql:
-    image: rajesh028/mysql:v1
+    image: rajesh028/mysql:v1.0
     container_name: mysql
     volumes:
     - source: mysql
