@@ -1,20 +1,20 @@
 {
-    "name": "backend",
-    "version": "1.2.0",
-    "description": "product backend REST API",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "SteveW",
-    "license": "Apache-2.0",
-    "dependencies": {
-        "body-parser": "^1.18.1",
-        "express": "^4.15.4",
-        "mongodb": "^3.5.3",
-        "pino": "^5.10.8",
-        "express-pino-logger": "^4.0.0",
-        "pino-pretty": "^2.5.0",
-        "@instana/collector": "^1.98.1"
-    }
+  "name": "Expense 3 Tier App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "latest",
+    "node-fetch": "^2.6.1",
+    "moment" : "latest"
   }
+}

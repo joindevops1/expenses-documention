@@ -1,5 +1,6 @@
 networks:
   expense:
+    name: expense
 
 volumes:
   mysql: #docker volume create mysql
@@ -22,7 +23,7 @@ services:
     depends_on:
       - backend
     ports:
-    - "80:80"#
+    - "80:80"
     networks:
       - expense
     
