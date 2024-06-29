@@ -1,7 +1,6 @@
 networks:
-  default:
-    external: 
-      name: expense
+  expense:
+    external: true
 volumes:
   mysql: #docker volume create mysql
         
@@ -13,8 +12,8 @@ services:
     container_name: backend
     depends_on:
       - mysql
-    # networks:
-    # - expense
+    networks:
+      - expense
     
 
   frontend:
@@ -23,7 +22,9 @@ services:
     depends_on:
       - backend
     ports:
-    - "80:80"
+    - "80:80"#
+    networks:
+      - expense
     
 
   mysql:
@@ -33,7 +34,8 @@ services:
     - source: mysql
       target: /var/lib/mysql
       type: volume
-
+    networks:
+      - expense
   
 
 
